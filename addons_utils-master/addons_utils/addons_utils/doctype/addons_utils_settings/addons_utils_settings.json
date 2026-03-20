@@ -1,0 +1,279 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-06 13:33:56.967299",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sales_invoice_tab",
+  "sales_invoice_uom_filter_section",
+  "enable_uom_filter",
+  "sales_invoice_rate_hide_section",
+  "enable_rate_hide",
+  "rate_readonly_role",
+  "items",
+  "item_groups",
+  "sales_invoice_rate_validation_section",
+  "enable_sales_invoice_rate_validation",
+  "sales_invoice_rate_validation_role",
+  "addons_utils_settings_items_validation",
+  "addons_utils_settings_item_groups_validation",
+  "sales_invoice_item_discount_section",
+  "enable_max_discount_amount",
+  "discount_amount_bypass_role",
+  "max_discount_limit",
+  "sales_invoice_max_discount_section",
+  "enable_max_siv_discount",
+  "role",
+  "discount_limit",
+  "quotation_tab",
+  "enable_quotation_uom_filter",
+  "sales_order_tab",
+  "enable__sales_order_uom_filter",
+  "delivery_note_tab",
+  "enable__delivery_note_uom_filter",
+  "material_request_tab",
+  "enable_material_request_uom_filter",
+  "purchase_order_tab",
+  "enable_purchase_order_uom_filter",
+  "purchase_receipt_tab",
+  "enable_purchase_receipt_uom_filter",
+  "purchase_invoice_tab",
+  "enable_purchase_invoice_uom_filter"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "description": "Enable UOM Filter In Sales Invoice Item Table based on Item Master UOM Table.",
+   "fieldname": "enable_uom_filter",
+   "fieldtype": "Check",
+   "label": "Enable UOM Filter"
+  },
+  {
+   "fieldname": "sales_invoice_tab",
+   "fieldtype": "Tab Break",
+   "label": "Sales Invoice"
+  },
+  {
+   "description": "The Rate field of Sales Invoice Item is read only for this Role.",
+   "fieldname": "rate_readonly_role",
+   "fieldtype": "Link",
+   "label": "Rate Readonly Role",
+   "options": "Role"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_max_discount_amount",
+   "fieldtype": "Check",
+   "label": "Enable MAX Discount Amount"
+  },
+  {
+   "fieldname": "max_discount_limit",
+   "fieldtype": "Currency",
+   "label": "MAX Discount Limit"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Addons Utils Settings Items"
+  },
+  {
+   "fieldname": "item_groups",
+   "fieldtype": "Table",
+   "label": "Item Groups",
+   "options": "Addons Utils Settings Item Groups"
+  },
+  {
+   "fieldname": "sales_invoice_item_discount_section",
+   "fieldtype": "Section Break",
+   "label": "Sales Invoice Item Discount"
+  },
+  {
+   "fieldname": "sales_invoice_rate_hide_section",
+   "fieldtype": "Section Break",
+   "label": "Sales Invoice Rate Hide"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_rate_hide",
+   "fieldtype": "Check",
+   "label": "Enable Rate Hide"
+  },
+  {
+   "fieldname": "discount_amount_bypass_role",
+   "fieldtype": "Link",
+   "label": "Discount Amount Bypass Role",
+   "options": "Role"
+  },
+  {
+   "fieldname": "sales_invoice_max_discount_section",
+   "fieldtype": "Section Break",
+   "label": "Sales Invoice MAX Discount "
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_max_siv_discount",
+   "fieldtype": "Check",
+   "label": "Enable MAX SIV Discount "
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Link",
+   "label": "Role",
+   "options": "Role"
+  },
+  {
+   "fieldname": "discount_limit",
+   "fieldtype": "Currency",
+   "label": "Discount Limit"
+  },
+  {
+   "fieldname": "sales_invoice_uom_filter_section",
+   "fieldtype": "Section Break",
+   "label": "Sales Invoice UOM Filter"
+  },
+  {
+   "fieldname": "quotation_tab",
+   "fieldtype": "Tab Break",
+   "label": "Quotation"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_quotation_uom_filter",
+   "fieldtype": "Check",
+   "label": "Enable Quotation UOM Filter"
+  },
+  {
+   "fieldname": "sales_order_tab",
+   "fieldtype": "Tab Break",
+   "label": "Sales Order"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable__sales_order_uom_filter",
+   "fieldtype": "Check",
+   "label": "Enable  Sales Order UOM Filter"
+  },
+  {
+   "fieldname": "delivery_note_tab",
+   "fieldtype": "Tab Break",
+   "label": "Delivery Note"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable__delivery_note_uom_filter",
+   "fieldtype": "Check",
+   "label": "Enable  Delivery Note UOM Filter"
+  },
+  {
+   "fieldname": "material_request_tab",
+   "fieldtype": "Tab Break",
+   "label": "Material Request"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_material_request_uom_filter",
+   "fieldtype": "Check",
+   "label": "Enable Material Request UOM Filter"
+  },
+  {
+   "fieldname": "purchase_order_tab",
+   "fieldtype": "Tab Break",
+   "label": "Purchase Order"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_purchase_order_uom_filter",
+   "fieldtype": "Check",
+   "label": "Enable Purchase Order UOM Filter"
+  },
+  {
+   "fieldname": "purchase_receipt_tab",
+   "fieldtype": "Tab Break",
+   "label": "Purchase Receipt"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_purchase_receipt_uom_filter",
+   "fieldtype": "Check",
+   "label": "Enable Purchase Receipt UOM Filter"
+  },
+  {
+   "fieldname": "purchase_invoice_tab",
+   "fieldtype": "Tab Break",
+   "label": "Purchase Invoice"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_purchase_invoice_uom_filter",
+   "fieldtype": "Check",
+   "label": "Enable Purchase Invoice UOM Filter"
+  },
+  {
+   "fieldname": "sales_invoice_rate_validation_section",
+   "fieldtype": "Section Break",
+   "label": "Sales Invoice Rate Validation"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_sales_invoice_rate_validation",
+   "fieldtype": "Check",
+   "label": "Enable Sales Invoice Rate Validation"
+  },
+  {
+   "fieldname": "sales_invoice_rate_validation_role",
+   "fieldtype": "Link",
+   "label": "Sales Invoice Rate Validation Role",
+   "options": "Role"
+  },
+  {
+   "fieldname": "addons_utils_settings_items_validation",
+   "fieldtype": "Table",
+   "label": "Addons Utils Settings Items Validation",
+   "options": "Addons Utils Settings Items Validation"
+  },
+  {
+   "fieldname": "addons_utils_settings_item_groups_validation",
+   "fieldtype": "Table",
+   "label": "Addons Utils Settings Item Groups Validation",
+   "options": "Addons Utils Settings Item Groups Validation"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-03-08 06:56:25.124684",
+ "modified_by": "Administrator",
+ "module": "Addons Utils",
+ "name": "Addons Utils Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "All",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
